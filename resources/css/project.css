@@ -1,0 +1,16 @@
+.list
+{
+background:white;
+text-align:left;
+}
+
+.list ul{
+ display:inline-flex;
+list-style:none;
+color:red;
+}
+
+.list ul li{
+ width:120px;
+margin:15px;
+padding:15px;}

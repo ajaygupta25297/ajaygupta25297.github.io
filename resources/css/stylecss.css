@@ -1,0 +1,460 @@
+/*------------basic setup------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { font-size: 18px; }
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+.row {
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+    zoom: 1;
+}
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; } 
+.span-1-of-4 {
+	width: 23.8%; 
+}
+.span-1-of-2 {
+	width: 49.2%;
+}
+/*-----------headings--------------*/
+h1 {
+    margin: 0;
+    font-size: 280%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    color: white;
+}
+h2 {
+    font-size: 180%;
+    text-align: center;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    margin-top: 70px;
+}
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #8f3985;
+    margin: 0 auto;
+    content: " ";
+    width: 250px;
+    margin-top: 15px;
+}
+h5,h3 {
+    font-size: 120%;
+    text-align: center;
+    word-spacing: 1px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+}
+h3 {
+    font-size: 140%;
+}
+p {
+    text-align: center;
+}
+
+/*-------------BUTTONS----------------*/
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full:link,
+btn-full:visited,
+input[type="submit"] {
+    border: 1px solid #8f3985;
+    color: #8f3985;
+    text-align: center;
+}
+.btn:hover,
+btn:active,
+input[type="submit"] {
+    background-color: #8f3985;
+    border: 1px solid #8f3985;
+    color: #fff;
+}
+.btn-full:hover,
+btn-full:active {
+    border: 1px solid #8f3985;
+}
+button {
+    background-color: #8f3985;
+    border: none;
+    color:white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 18px;
+    margin: auto;
+    border-radius: 4px;
+}
+
+/*------------Header---------------*/
+.mainfile {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(imgs/store1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    background-attachment: fixed;
+}
+.text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.name {
+    font-size: 300%;
+}
+
+/*------------sticky nav-----------*/
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #efefef;
+    box-shadow: 0 2px 2px #888;
+    z-index: 9999;
+}
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0 4px 0;
+    color: #555;
+}
+.logo {
+    max-height: 5%;
+    max-width: 5%;
+    display: block;
+    float: left;
+    margin: 5px;
+}
+/*----------Navigation------------*/
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #8f3985;
+}
+
+/*-----------Features-------------*/
+.features {
+    padding: 0;
+    margin-bottom: 100px;
+}
+.features-show {
+    list-style: none;
+    width: 100%;
+    text-decoration: none;
+}
+.features-show li {
+    display: block;
+    float: left;
+    width: 33%;
+}
+
+
+/*--------Categories(main)---------*/
+.categories {
+    padding: 0;
+    margin-top: 100px;
+}
+.categories-showcase {
+    list-style: none;
+    width: 100%;
+}
+.categories-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+.shop {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+.shop img {
+    opacity: 0.7;
+    width: 100%;
+    height : auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;  
+}
+.shop img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/*-----------Footer--------------*/
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 120%;
+}
+.footer-nav {
+    list-style: none;
+    float: left;
+    margin-right: 0;
+}
+.footer-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}.social-links {
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.social-links li:last child {
+    margin-right: 0;
+    float: right;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-nav li a:link,
+.social-nav li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+.social-nav li a:link,
+.social-nav li a:visited {
+    font-size: 180%;
+}
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+footer p {
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 30px;
+}
+
+/*-----------Offers-----------*/
+
+.offers-show {
+    text-decoration: none;
+}
+.offers-show li {
+    list-style: none;
+}
+.offerimg:hover {
+    transform: scale(1.05); 
+    border: 2px solid #8f3985;
+}
+
+/*----------Categories----------*/
+.section-select {
+    margin: 0;
+    margin-bottom: 100px;
+    background-color: #f4f4f4;
+}
+.items-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+.items-box:hover,
+.items-box:active {
+    box-shadow: 0 3px 3px #8f3985;
+}
+.items-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    
+}
+.items-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.items-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+.item-name {
+    font-size: 120%;
+    margin-top: 10px;
+    font-weight: 350;
+    color: #8f3985;
+    text-align: center;
+}
+.items-box ul {
+    list-style: none;
+    margin-left: 0;
+}
+.items-box ul li {
+    padding: 5px 0;
+}
+
+.item {
+    width: 215px; 
+}
+.image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image:hover {
+    transform: scale(1.05);
+}
+.amount {
+    margin-bottom: 10px;
+}
+
+/*---------Sign-up----------*/
+.hide {
+    display: none;
+}
+.section-sign {
+    margin: 0;
+    margin-bottom: 100px;
+    background-color: #f4f4f4;
+}
+.signup-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 50%;
+    margin: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 2px #efefef;
+    padding: 5%;
+}
+input {
+    margin-top: 5%;
+    width: 55%;
+    height: auto;
+}
+
+/*------------go to cart------------*/
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+th,td {
+    height: 60px;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    width: 15%;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+th {
+    background-color: #8f3985;
+    color: white;
+    height: 70px;
+}
+th:nth-child(1),
+td:nth-child(1) {
+    width: 20%;
+}
+th:nth-child(2),
+td:nth-child(2) {
+    width: 40%;
+}
+th:nth-child(3),
+td:nth-child(3) {
+    width: 25%;
+}
+th:nth-child(4),
+td:nth-child(4) {
+    width: 25%;
+}
+
+#noitem, #table1,#order
+{
+	display:none;
+}
+.hide
+{
+display:none
+}
+.para-foot {
+    margin: 0;
+    font-size:80%;
+}
