@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" type="text/css" href="resources\css\stylecss.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+<script src="resources\javascript\jscript.js">
+</script>
+<title>
+Booking Management System
+</title>
+</head>
+<body onload="user()">
+<header>
+         <nav class="sticky">
+             <div class="row">
+                 <img src="resources\img\logo.png" alt="logo" class="logo">
+                 <ul class="main-nav">
+                    <li><a class="hide" id="username" href="main.html">Username</a></li>
+                     <li ><a class="hide" id="logout" onclick="logout()" href="main.html">Log Out</a></li>
+                      <li><b><a id="login" href="project.html">Home</a></b></li>
+                     <li><b><a id="login" href="project.html">About</a></b></li>
+                     <li><b><a id="login" href="project.html">Contact us</a></b></li>
+                     <li><a href="project.html">Book Tickets</a></li>
+                     <li><a id="signin" href="Signup.html">Sign Up</a></li>
+                     <li><a id="login" href="loginpage.html">Login</a></li>
+                  </ul>
+             </div>
+         </nav>
+</header>
+<section class="section-select " id="plans">
+            <div class="row">
+                 <h2>Sign Up</h2>
+            </div>
+<div class="row">
+                <div class="signup-box">
+                                 <center>
+                                   <form onsubmit= "return signup()" action="loginpage.html">
+                                        <center>
+                                                  <input placeholder="Username" type="text" id="userid"/><br><br><br>
+                                                  <input placeholder="Password" type="password" id="pswrd"/><br><br><br>
+                                                  <input placeholder="Confirm Password" type="password" id="cpswrd"/><br><br><br>
+                                                  <input class="btn btn-full" type="submit"  value="SIGN IN"/><br><br><br>
+                                                  <input class="btn btn-full" type="reset" value="CANCEL"/><br><br><br>
+                                        </center>
+                                    </form>
+                                 </center>
+                </div>
+            </div>      
+            </section>
+</body>
+</html>

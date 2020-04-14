@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+     <link rel="stylesheet" type="text/css" href="resources\css\stylecss.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+    <script src="resources\javascript\jscript.js"></script>
+     <title>Booking Management System</title>
+    </head>
+      <body onload="user()">
+        <header>
+         <nav class="sticky">
+             <div class="row">
+                 <img src="resources\img\logo.png" alt="logo" class="logo">
+                <ul class="main-nav">
+                     <li><a class="hide" id="username" href="main.html">Username</a></li>
+                     <li><a class="hide" id="logout" onclick="logout()"href="main.html">Log Out</a></li>  
+                     
+                      <li><b><a id="login" href="project.html">Home</a></b></li>
+                      <li><b><a id="login" href="about.html">About</a></b></li>
+                      <li><b><a id="login" href="contact.html">Contact us</a></b></li>
+                     <li><b><a href="#linktobottom">Book Tickets</a></b></li>
+                     <li><b><a id="signin" href="Signup.html">Sign Up</a></b></li>
+                     <li><b><a id="login" href="loginpage.html">Login</a></b></li>
+                 </ul>
+             </div>
+         </nav>
+        </header>
+        
+        <section class="section-select " id="plans">
+            <div class="row">
+                 <h2>Movie Description & Offers</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources\img\offer1.png" alt=" ">
+                             </figure>
+                             <h3 class="item-name">Paytm is giving Rs.150 Cashback on booking two movie tickets</h3>
+                         </div>
+                         <div>
+                             <p class="amount">Two Movie<br>Rs.150 off</p>
+                         </div>
+                         <div>
+                             <a onclick="#" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources\img\offer2.jpg" alt=" ">
+                             </figure>
+                             <h3 class="item-name">RBL Bank is giving offer to get 24 movie tickets free every year.</h3>
+                         </div>
+                         <div>
+                             <p class="amount">24 Movie<br>Rs.1000 off</p>
+                         </div>
+                         <div>
+                             <a onclick="#" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                 <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources\img\3.jpg" alt=" ">
+                             </figure>
+                             <h3 class="item-name">There is no force greater in the world than the love of a parent.</h3>
+                         </div>
+                         <div>
+                             <p class="amount"> This is the central theme of Irrfan and<br> Radhika Madan-starrer Angrezi Medium</p>
+                         </div>
+                         <div>
+                             <a onclick="#" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+               <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources\img\offer3.jpg" alt=" ">
+                             </figure>
+                             <h3 class="item-name">ICICI Bank is giving free movie tickets on booking one movie tickets</h3>
+                         </div>
+                         <div>
+                             <p class="amount">Book one Movie<br>Rs. Get one off</p>
+                         </div>
+                         <div>
+                             <a onclick="#" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources\img\cap.jpg" alt=" ">
+                             </figure>
+                             <h3 class="item-name"> Marvel Captain has theme related to ideas of individualism and self-realization,</h3>
+                         </div>
+                         <div>
+                             <p class="amount"> a more striking theme<br>of Captain Marvel</p>
+                         </div>
+                         <div>
+                             <a onclick="#" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                 <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources\img\offer6.jpg" alt=" ">
+                             </figure>
+                             <h3 class="item-name">Bank of Baroda is giving Rs.150 and Rs.100 Cashback on booking movie tickets</h3>
+                         </div>
+                         <div>
+                             <p class="amount">Two Movie<br>Rs.150 off</p>
+                         </div>
+                         <div>
+                             <a onclick="#" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                    <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources\img\2darbar.jpg" alt=" ">
+                             </figure>
+                             <h3 class="item-name">Darbar is a 2020 Indian Tamil-language action thriller film</h3>
+                         </div>
+                         <div>
+                             <p class="amount">An instrumental theme song for the film titled<br> "Thalaivar Theme"</p>
+                         </div>
+                         <div>
+                             <a onclick="#" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+                  <div class="col span-1-of-4">
+                    <div class="items-box">
+                         <div>
+                             <figure class="item">
+                                 <img class="image" src="resources\img\offer7.jpg" alt=" ">
+                             </figure>
+                             <h3 class="item-name">Amazon Pay is giving Rs.100 Cashback on booking  movie tickets</h3>
+                         </div>
+                         <div>
+                             <p class="amount">Two Movie<br>Rs.100 off</p>
+                         </div>
+                         <div>
+                             <a onclick="#" href="#" class="btn btn-full">Add to cart</a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+               <ul class="footer-nav">
+                   <li><a href="#">Contact us:</a></li>
+                   <p class="para-foot">040-2110-1894-2618<br>Email us: thefkgroceries@gmail.co.in</p>
+               </ul>
+            </div>
+            <div class="col span-1-of-2">
+               <ul class="footer-nav"> 
+                   <li><a href="#"><ion-icon class="ion-social-facebook" name="logo-facebook"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-twitter" name="logo-twitter"></ion-icon></a></li>
+                   <li><a href="#"><ion-icon class="ion-social-instagram" name="logo-instagram"></ion-icon></a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="row">
+           <p>
+              Copyright &copy; 2020 by Freshcart. All rights reserved.
+            </p>  
+        </div>
+       </footer>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+   </body>
+</html>
